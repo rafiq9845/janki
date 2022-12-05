@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>staragile</artifactId>
-	<version>1.0.0</version>
+	<artifactId>cloudbinary</artifactId>
+	<version>5.0.0</version>
 	<packaging>war</packaging>
 
-	<name>staragile</name>
-	<description>DevOps Demo Project - staragile DevOps Project</description>
+	<name>cloudbinary</name>
+	<description>cloudbinary Demo Java WebApplication Project</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -22,18 +22,18 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
  		<maven.compiler.target>1.8</maven.compiler.target>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 		<surefire.version>3.0.0-M5</surefire.version>
 		<jacoco.version>0.7.9</jacoco.version>
 		
-		<!-- SonarQube Integration 
-        <sonar.projectKey>softobiz-devops</sonar.projectKey>
-        <sonar.organization>softobiz-devops</sonar.organization>
-        <sonar.host.url>http://18.118.189.10:9000</sonar.host.url>
-        <sonar.login>d62c8bf45df00bfbcb76ce3cc101d496b8d137f1</sonar.login>
-		-->
+		<!-- SonarQube Integration -->
+        <sonar.projectKey>opsworkjava</sonar.projectKey>
+        <sonar.organization>opswork</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>ac36641c868673e6ab80d0d10c78ee335b8e58ad</sonar.login>
+
 	</properties>
-	
+	<!--
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
@@ -44,7 +44,15 @@
         <id>central</id>
         <name>jfrog.cloudbinary.io-releases</name>
         <url>http://3.111.219.176:8081/artifactory/libs-release-local</url>
-    </repository>	
+    </repository>
+</distributionManagement>
+-->
+<distributionManagement>
+  <repository>
+    <id>example-repo-local</id>
+    <name>example-repo-local</name>
+    <url>https://kesavkummari.jfrog.io/artifactory/example-repo-local/</url>
+  </repository>
 </distributionManagement>
 	
 	<scm>
